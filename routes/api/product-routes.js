@@ -11,9 +11,10 @@ router.get('/', async (req, res) => {
     const rows = await Product.findAll({
                   include: [
                     {model: Category},
-                    {model: Tag,
-                     through: ProductTag,
-                     as: 'product_tags' }
+                    {
+                      model: Tag,
+                      through:  {attributes: ['id', 'product_id','tag_id']} ,
+                     as: 'tags' }
                   ]
     });
     res.json(rows);
@@ -35,9 +36,10 @@ router.get('/:id', async (req, res) => {
                   where: {id: req.params.id},
                   include: [
                     {model: Category},
-                    {model: Tag,
-                    through: ProductTag,
-                    as: 'product_tags'}
+                    {
+                      model: Tag,
+                    through:  {attributes: ['id', 'product_id','tag_id']} ,
+                    as: 'tags'}
                   ]
     });
 
