@@ -18,4 +18,4 @@ sequelize.sync({force: false}).then(() => {
   });  
 });
 
-//To Do routes only
+

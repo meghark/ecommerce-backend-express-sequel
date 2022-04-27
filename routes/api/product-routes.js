@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
                   include: [
                     {model: Category},
                     {model: Tag,
-                      attributes: [tag_name],
                      through: ProductTag,
                      as: 'product_tags' }
                   ]
@@ -37,7 +36,6 @@ router.get('/:id', async (req, res) => {
                   include: [
                     {model: Category},
                     {model: Tag,
-                    attributes: [tag_name],
                     through: ProductTag,
                     as: 'product_tags'}
                   ]
