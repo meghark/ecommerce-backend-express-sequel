@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
   }  
 });
 
+//Find category by id
 router.get('/:id',async (req, res) => {
   try{
       const rows = await Category.findOne({
