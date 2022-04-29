@@ -26,17 +26,22 @@ To run the command line application.
 ## Usage
 
 Open command line windows:
-    - Update environment variables in .env file.
-    - Connect to mysql database. Run the command.
-        source db/schema.sql         
-    - Run command npm start
-    - To populate the tables with test data run :
-      npm run seed 
-    - Access the api via tools like Postman or Insomnia
+- Update environment variables in .env file.
+- Connect to mysql database. Run the command.
+    source db/schema.sql         
+- Run command npm start
+- To populate the tables with test data run :
+    npm run seed 
+- Access the api via tools like Postman or Insomnia
 
 ## Link to demo video
 
 Use the following video to access a short demo on the application.
+Video showing the command line:
+https://drive.google.com/file/d/1lOuwhuqQtSwzCPaPKm3K9TcNwzpw0Cu2/view
+
+Video showing the api calls:
+https://drive.google.com/file/d/1ke9yApIbSsPuS1QPPB9JdhKWstlK8Z97/view
 
 
 # Questions
